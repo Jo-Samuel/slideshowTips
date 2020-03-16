@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
-
+	<link rel='stylesheet' href='styles.css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<!-- Theme used for syntax highlighting of code -->
@@ -31,10 +31,10 @@
 		<div class="slides">
 			<section>
 				<section div id='defaults' class='fullscreen'>
-					Choose ONE </br></br>
-					<button type='button' id='weekday' class='fwdBtn' tog-lerID='defaults'>Weekday</button></br>
-					<button type='button' id='weekend' class='fwdBtn' tog-lerID='defaults'>Weekend</button></br>
-					<button type='button' id='manual' class='fwdBtn' tog-lerID='defaults'>Manual</button></br>
+					<h3>Choose ONE</h3>
+					<button type='button' id='weekday' class='fwdBtn' tog-lerID='defaults'>Weekday</button>
+					<button type='button' id='weekend' class='fwdBtn' tog-lerID='defaults'>Weekend</button>
+					<button type='button' id='manual' class='fwdBtn' tog-lerID='defaults'>Manual</button>
 				</section>
 
 				<section>
@@ -47,12 +47,13 @@
 						<p>Number of Servers</p>
 						<input type="text" id="numServer"></input>
 					</div>
+					<button tog-lerID = 'confirm'  class = 'fwdBtn' type = 'button' style = 'height: auto; width: auto'>Confirm</button>
 				</section>
 
 				<section>
 					<div id='cashV' class='fullscreen'>
-						<h3>Enter Total Cash</h3>
-						<input type="text" id='totalCash' placeholder="Total Cash">
+						<h3>TOTAL CASH</h3>
+						<input type="text" id='totalCash' placeholder="ENTER CASH HERE">
 						<button tog-lerID = 'calculate'  class = 'fwdBtn' type = 'button' style = 'height: auto; width: auto'>Calculate</button>
 					</div>
 				</section>
@@ -62,16 +63,19 @@
 				<section div id='results' class='fullscreen'>
 					<h3>MATH. Here's the numbers</h3>
 					<p>Busgirls</p>
-					<input type="text" id="bg" placeholder="bg"></input>
+					<input type="text" id="bg" placeholder="NO BUSGIRL ENTERED"></input>
+					<input type="text" id="bgMod" placeholder="BUSGIRL DINNER" hidden></input>
 					<p>Busboys</p>
-					<input type="text" id="bb" placeholder="bb"></input>
+					<input type="text" id="bb" placeholder="NO BUSBOY ENTERED"></input>
+					<input type="text" id="bbMod" placeholder="BUSGIRL DINNER" hidden></input>
 					<p>Servers</p>
-					<input type="text" id="serv" placeholder="serv"></input>
+					<input type="text" id="serv" placeholder="NO SERVER ENTERED"></input>
+					<input type="text" id="servMod" placeholder="TRAINEE" hidden></input>
+					<br><button class = 'fwdBtn' type = 'button' style = 'height: auto; width: auto'>VIEW MORE</button>
 				</section>
 
 				<section>
 					<h3>Confirmation Page</h3>
-
 					<p>Feed Piggy</p>
 					<input type="text" id="remainder" placeholder="remainder"></input>
 
