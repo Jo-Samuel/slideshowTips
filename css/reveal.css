@@ -9,7 +9,6 @@
  * GLOBAL STYLES
  *********************************************/
 html {
-  width: 100%;
   height: 100%;
   height: 100vh;
   height: calc( var(--vh, 1vh) * 100);
@@ -17,21 +16,33 @@ html {
 
 body {
   height: 100%;
+  width: auto;
   overflow: hidden;
   position: relative;
   line-height: 1;
   margin: 0;
   background-color: #fff;
-  color: #000; }
-
-.reveal .slides input{
-  text-align: center;
+  color: #000; 
 }
+
+.reveal .slides input, textarea{
+  text-align: center;
+  font-size: large;
+}
+
+#defaults button{
+  height: 80px;
+  width: auto;
+}
+
+
+
 
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
 .reveal .slides section .fragment {
+  text-align: center;
   opacity: 0;
   visibility: hidden;
   transition: all .2s ease; }
