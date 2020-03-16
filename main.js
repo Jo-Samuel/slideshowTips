@@ -1,20 +1,4 @@
 $(document).ready(function () {
-    //refresh page
-    /*$('.refresh').on('click', function(){
-        document.reload();
-    });*/
-
-    //hides elements shows next element
-$(document).ready(function () {
-    //refresh page
-    $('.refresh').on('click', function () {
-        document.reload();
-    });
-
-    Reveal.addEventListener('customevent', function () {
-        console.log('"customevent" has fired');
-    });
-
     //hides elements shows next element
     //hides elements when confirming selection
     $('.fwdBtn').on('click', function () {
